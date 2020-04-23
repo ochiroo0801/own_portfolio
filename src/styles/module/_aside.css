@@ -1,0 +1,129 @@
+.aside {
+  width: 270px;
+  background-color: #fdf9ff;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  border-right: 1px solid #e8dfec;
+  padding: 30px;
+
+  .logo {
+    padding: 30px 0;
+    text-align: center;
+
+    a {
+      font-size: 40px;
+      color: #302e4d;
+      font-family: "Rubik", sans-serif;
+      font-weight: 700;
+      display: inline-block;
+      position: relative;
+      padding: 0 10px;
+      line-height: 50px;
+
+      &::before {
+        content: "";
+        height: 20px;
+        width: 20px;
+        border-top: 4px solid $mainPink;
+        border-left: 4px solid $mainPink;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      &::after {
+        content: "";
+        height: 20px;
+        width: 20px;
+        border-bottom: 4px solid $mainPink;
+        border-right: 4px solid $mainPink;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+
+  .nav-toggler {
+    height: 40px;
+    width: 45px;
+    border: 1px solid #d4d4e3;
+    cursor: pointer;
+    position: fixed;
+    left: 300px;
+    top: 30px;
+    z-index: 11;
+    border-radius: 5px;
+    background-color: #fdf9ff;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      height: 2px;
+      width: 18px;
+      display: inline-block;
+      position: relative;
+      background-color: $mainPink;
+
+      &::before {
+        content: "";
+        height: 2px;
+        width: 18px;
+        position: absolute;
+        top: -6px;
+        left: 0;
+        background-color: $mainPink;
+      }
+      &::after {
+        content: "";
+        height: 2px;
+        width: 18px;
+        position: absolute;
+        top: 6px;
+        left: 0;
+        background-color: $mainPink;
+      }
+    }
+  }
+
+  .nav {
+    list-style: none;
+    margin: 80px 0;
+
+    li {
+      display: block;
+
+      a {
+        font-size: 16px;
+        font-weight: 600;
+        color: #302e4d;
+        line-height: 45px;
+        display: block;
+        border-bottom: 1px solid #e8dfec;
+        transition: all 0.3s ease;
+        text-transform: capitalize;
+
+        &:not(.active):hover {
+          padding-left: 5px;
+          color: $mainPink;
+        }
+
+        &.active {
+          color: $mainPink;
+        }
+
+        .fa {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  .copyright-text {
+    font-size: 13px;
+    color: #7d7d7d;
+  }
+}
