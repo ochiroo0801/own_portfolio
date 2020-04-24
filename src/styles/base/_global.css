@@ -16,3 +16,34 @@ body {
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
 }
+
+.hidden {
+  display: none !important;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+}
+
+.btn {
+  font-size: 16px;
+  font-family: $font2;
+  font-size: 500;
+  padding: 12px 35px;
+  color: #fff;
+  border-radius: 40px;
+  background-color: $mainPink;
+  transition: all 0.3s ease;
+  display: inline-block;
+  white-space: nowrap;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.shadow-dark {
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
