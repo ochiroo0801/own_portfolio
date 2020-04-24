@@ -1,0 +1,18 @@
+.service {
+  .container {
+    padding-bottom: 40px;
+  }
+  .service-item {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+
+    .service-item-inner {
+      background-color: #fdf9ff;
+      border: 1px solid #d4d4e3;
+      border-radius: 10px;
+      padding: 30px 15px;
+      text-align: center;
+    }
+  }
+}

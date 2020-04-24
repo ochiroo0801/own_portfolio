@@ -6,5 +6,6 @@
 @import "./module/_aside.css";
 @import "./module/_home-page.css";
 @import "./module/_about-page.css";
+@import "./module/_service.css";
 
 @import "normalize.css";
