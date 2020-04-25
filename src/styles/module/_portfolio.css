@@ -1,0 +1,55 @@
+.portfolio {
+  .container {
+    padding-bottom: 40px;
+  }
+
+  &-filter {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+
+    button {
+      border: none;
+      background-color: transparent;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: capitalize;
+      margin: 0 10px;
+      color: #302e4d;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      white-space: nowrap;
+      padding-bottom: 2px;
+      transition: 0.3s ease;
+
+      &.active {
+        color: $mainPink;
+        border-color: $mainPink;
+      }
+    }
+  }
+
+  &-item {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+
+    &-inner {
+      border: 6px solid #fdf9ff;
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+
+      .portfolio-img {
+        img {
+          width: 100%;
+          display: block;
+        }
+      }
+
+      .portfolio-info {
+      }
+    }
+  }
+}
